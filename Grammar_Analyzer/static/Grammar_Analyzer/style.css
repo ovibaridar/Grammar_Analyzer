@@ -1,10 +1,14 @@
 
 
-    body{
-
-    background-color:black;
+body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#000000;
     }
-   .container {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,8 +18,13 @@
   font-weight: bold;
 }
 
+
+
+
 .typewriter {
-    color:white;
+    color: #0f0f0f;
+    text-shadow: -1px -1px 3px #020202,
+      2px 2px 4px #2DC6C5;
 	width: 21.5ch;
 	white-space: nowrap;
 	overflow: hidden;
@@ -26,11 +35,53 @@
 	animation: cursor 1s step-start infinite,
     text 5s steps(18) alternate infinite;
 }
-.maindiv
+.rowdiv
 {
-    background-color:white;
+    background-color:black;
+    box-shadow: 0px 1px 2px 0px rgba(0,255,255,0.7),
+            1px 2px 4px 0px rgba(0,255,255,0.7),
+            2px 4px 8px 0px rgba(0,255,255,0.7),
+            2px 4px 16px 0px rgba(0,255,255,0.7);
 
 }
+.output{
+    margin: 0 auto;
+}
+
+.output::-webkit-scrollbar {
+    width: 12px;
+  }
+  .output::-webkit-scrollbar-track {
+    background: 0px 1px 2px 0px rgba(0,255,255,0.7),
+            1px 2px 4px 0px rgba(0,255,255,0.7),
+            2px 4px 8px 0px rgba(0,255,255,0.7),
+            2px 4px 16px 0px rgba(0,255,255,0.7);
+  }
+
+
+  .output::-webkit-scrollbar-thumb {
+    background-color: rgb(129, 129, 131);
+
+  }
+
+
+
+.textarea{
+    width: 500px;
+    outline:none;
+    height:300px;
+    max-height:300px;
+
+}
+
+
+
+.output{
+    width: 500px;
+    outline:none;
+
+}
+
 
 @keyframes cursor {
 	0%, 100% {

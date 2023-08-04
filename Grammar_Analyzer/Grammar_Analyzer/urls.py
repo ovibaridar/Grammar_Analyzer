@@ -20,5 +20,7 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.Grammar_Analyzer, name='Grammar_Analyzer')
+    path('', views.Grammar_Analyzer, name='Grammar_Analyzer'),
+    path('Grammar_Analyzer_results/', views.Grammar_Analyzer_results, name='Grammar_Analyzer_results')
+
 ]
