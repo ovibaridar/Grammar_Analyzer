@@ -60,7 +60,7 @@ body{
 
 
   .output::-webkit-scrollbar-thumb {
-    background-color: rgb(129, 129, 131);
+    background-color: trgb(129, 129, 131);
 
   }
 
@@ -94,6 +94,6 @@ body{
     width: 0;
   }
 	100% {
-    width: 13.5ch;
+    width: 15ch;
   }
 }

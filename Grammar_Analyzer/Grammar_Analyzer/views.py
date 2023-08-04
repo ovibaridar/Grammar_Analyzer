@@ -8,6 +8,8 @@ def Grammar_Analyzer(request):
 def Grammar_Analyzer_results(request):
     if request.method == 'POST':
         sentence = request.POST.get('sentence', '')
+        if sentence=='':
+            return render(request, 'Grammar_Analyzer/Grammar_Analyzer.html', {'instraction': "No sentence here."})
         language ="en-US"  # Get selected language or default to English
         tool = LanguageTool(language)
         matches = tool.check(sentence)
