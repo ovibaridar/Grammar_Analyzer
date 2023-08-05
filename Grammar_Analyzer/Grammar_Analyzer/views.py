@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from language_tool_python import LanguageTool
 
+
 def Grammar_Analyzer(request):
 
     return render(request,'Grammar_Analyzer/Grammar_Analyzer.html',{'instraction' : "Hello! Welcome"})
@@ -21,6 +22,8 @@ def Grammar_Analyzer_results(request):
                 'message': match.message,
                 'suggestions': match.replacements
             })
+
+
 
         return render(request, 'Grammar_Analyzer/Grammar_Analyzer.html', {
             'sentence': sentence,

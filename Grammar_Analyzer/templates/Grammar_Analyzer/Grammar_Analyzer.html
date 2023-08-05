@@ -23,8 +23,8 @@
 
 <div class="position-absolute top-50 rowdiv start-50 translate-middle maindiv">
     <div class=" top-0  start-50  d-flex justify-content-center">
-        <button id="inputButton" type="button" class="btn btn-outline-dark m-2">Input</button>
-        <button id="outputButton" type="button" class="btn btn-outline-dark m-2">Output</button>
+        <button id="inputButton" type="button" class="btn btn-outline-light m-2">Input</button>
+        <button id="outputButton" type="button" class="btn btn-outline-light m-2">Output</button>
     </div>
 
 
@@ -47,7 +47,7 @@
                 <textarea name="sentence" class="textarea ms-5 p-3" placeholder="Enter your text here...."></textarea>
             </div>
             <div class="justify-content-center d-flex position-relative top-100 start-0">
-                <button id="submitbutton" type="submit" class="btn btn-outline-dark m-2">Submit</button>
+                <button id="submitbutton" type="submit" class="btn btn-outline-light  m-2">Submit</button>
             </div>
         </form>
     </div>
@@ -58,11 +58,12 @@
             <div class="centered-container"> <!-- Add a container div -->
                 <p class="results_analysis" style="text-align: justify;"> <strong> Input : </strong><br> {{sentence}}</p>
             </div>
+
             <div class="centered-container"> <!-- Add a container div -->
                 <h2 class="results_analysis">Analysis Result</h2>
             </div>
             {% for category, errors in categorized_errors.items %}
-            <h3>{{ category|capfirst }}</h3>
+            <h4>{{ category|capfirst }}</h4>
             {% if errors %}
             <ul>
                 {% for error in errors %}
